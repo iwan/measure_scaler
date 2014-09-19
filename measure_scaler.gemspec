@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = MeasureScaler::VERSION
   spec.authors       = ["Iwan Buetti"]
   spec.email         = ["iwan.buetti@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Simple gem to deal with measure scaling"
+  # spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.homepage      = "https://github.com/iwan/measure_scaler"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

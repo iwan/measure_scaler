@@ -1,5 +1,9 @@
 # MeasureScaler
 
+[![Build Status](https://travis-ci.org/iwan/measure_scaler.png)](https://travis-ci.org/iwan/measure_scaler)
+[![Coverage Status](https://img.shields.io/coveralls/iwan/measure_scaler.svg)](https://coveralls.io/r/iwan/measure_scaler)
+[![Code Climate](https://codeclimate.com/github/iwan/measure_scaler/badges/gpa.svg)](https://codeclimate.com/github/iwan/measure_scaler)
+
 Simple gem to deal with measure scaling.
 
 A couple of examples:
