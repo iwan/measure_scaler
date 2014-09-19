@@ -1,3 +1,4 @@
+# encoding: UTF-8
 module MeasureScaler
   module Prefixes
     # http://en.wikipedia.org/wiki/Metric_prefix
