@@ -1,6 +1,6 @@
 module MeasureScaler
   class Measure
-    attr_reader :qty, :unit
+    attr_reader :qty, :unit, :precision
 
     # Measure.new(12500.34, "MWh")
     def initialize(qty, unit, precision=nil)
@@ -14,10 +14,7 @@ module MeasureScaler
 
       if @unit.pattern_found?
         ord = @qty.scaling_proposal # multipli di 3
-        puts "1. ord: #{ord}"
         ord, new_unit = @unit.scale(ord)
-        puts "2. ord: #{ord}"
-        puts "2. new_unit: #{new_unit}"
         qty = @qty.scale(ord)
         qty = precisize(qty) if @precision
         Measure.new(qty, new_unit, @precision)

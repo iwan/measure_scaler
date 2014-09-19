@@ -24,7 +24,6 @@ module MeasureScaler
 
     def scale(order) # order is a multiple of 3
       definitive_order, new_prefix = @prefix.scale(order*@direction)
-      # puts "--- definitive_order: #{definitive_order}, new_prefix: #{new_prefix}"
       [ definitive_order*@direction, 
         Unit.new(
           prefix: new_prefix, 
