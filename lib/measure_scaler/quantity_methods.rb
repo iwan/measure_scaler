@@ -3,6 +3,8 @@ module MeasureScaler
     Numeric.class_eval do
       def scaling_proposal
         (Math.log10(self).floor/3)*3
+      rescue
+        0.0
       end
 
       def scale(ord) # order of magnitude

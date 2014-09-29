@@ -32,6 +32,10 @@ RSpec.describe Measure do
     it "initialize incorrectly" do
     end
 
+    it "scale zero" do
+      Measure.new([55.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "MWh", 4).scale
+    end
+
     context 'without preunit' do
       it "when scaled it's always a measure" do
         expect(valid_measure1.scale).to be_an_instance_of Measure
