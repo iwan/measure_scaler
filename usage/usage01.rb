@@ -18,5 +18,8 @@ puts MeasureScaler::Measure.new(12300.456789, "€/kWh", 4).scale.to_s
 puts "--------------------------"
 
 include MeasureScaler
-puts Measure.new(12300.456789, "€/kWh").scale.to_s
+puts Measure.new(12345.6789, "€/kWh").scale.to_s
 
+puts Measure.new(12345.6789, "€/kWh", 4).scale.to_s
+
+puts Measure.new(-12345.6789, "€/kWh", 4).scale.to_s

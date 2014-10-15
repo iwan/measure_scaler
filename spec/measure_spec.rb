@@ -57,6 +57,11 @@ RSpec.describe Measure do
         expect(Measure.new(qty1, unit1, 6).scale.to_s).to eq("12.5003 GWh")
         expect(Measure.new(qty1, unit1, 7).scale.to_s).to eq("12.50034 GWh")
       end
+
+      it "scale correctly with negative measures" do
+        expect(Measure.new(-12345.678, unit1, 4).scale.to_s).to eq("-12.35 GWh")
+      end
+        
     end
 
     context 'with preunit' do

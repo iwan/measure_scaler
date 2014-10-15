@@ -2,7 +2,7 @@ module MeasureScaler
   module QuantityMethods
     Numeric.class_eval do
       def scaling_proposal
-        (Math.log10(self).floor/3)*3
+        (Math.log10(self.abs).floor/3)*3
       rescue
         0.0
       end

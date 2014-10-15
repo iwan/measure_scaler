@@ -42,7 +42,8 @@ module MeasureScaler
 
     def precisize_num(num)
       return 0.0 if num==0.0
-      lg = Math.log10(num.to_f).ceil
+      lg = Math.log10(num.to_f.abs).ceil
+      # lg = Math.log10(num.to_f).ceil
       (num.to_f*10**(@precision-lg)).round/(10.0**(@precision-lg))
     end
   end
